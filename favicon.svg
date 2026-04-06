@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="scarf" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c86090"/>
+      <stop offset="100%" stop-color="#8b3a62"/>
+    </linearGradient>
+  </defs>
+  <!-- Fond arrondi bordeaux -->
+  <rect width="64" height="64" rx="13" fill="#6b2a48"/>
+  <!-- Écharpe enroulée — forme principale -->
+  <path d="M 12 24 Q 14 20 20 22 Q 32 26 44 20 Q 50 18 52 22 Q 54 26 50 28 Q 40 32 28 28 Q 18 24 14 30 Q 12 34 16 36 Q 24 40 38 36 Q 48 32 52 36 Q 56 40 50 42 Q 40 46 26 42 Q 16 38 12 44"
+        stroke="url(#scarf)" stroke-width="5.5" stroke-linecap="round" fill="none"/>
+  <!-- Lignes de texture tissu -->
+  <path d="M 18 23 Q 32 27 46 21" stroke="#e8a0c0" stroke-width="1" fill="none" opacity="0.5"/>
+  <path d="M 16 33 Q 30 37 46 31" stroke="#e8a0c0" stroke-width="1" fill="none" opacity="0.5"/>
+  <path d="M 18 43 Q 30 46 46 41" stroke="#e8a0c0" stroke-width="1" fill="none" opacity="0.5"/>
+  <!-- Franges -->
+  <line x1="12" y1="44" x2="10" y2="52" stroke="#c86090" stroke-width="1.8" stroke-linecap="round"/>
+  <line x1="15" y1="46" x2="13" y2="54" stroke="#c86090" stroke-width="1.8" stroke-linecap="round"/>
+  <line x1="18" y1="47" x2="16" y2="55" stroke="#c86090" stroke-width="1.8" stroke-linecap="round"/>
+</svg>
