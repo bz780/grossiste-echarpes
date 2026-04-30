@@ -227,7 +227,8 @@ header { background: var(--white); border-bottom: 1px solid var(--border); posit
 .product-card { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-sm); transition: transform .2s, box-shadow .2s; }
 .product-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
 .product-card[style*="display: none"] { display: none !important; }
-.product-thumb { height: 150px; display: flex; align-items: center; justify-content: center; font-size: 3.2rem; position: relative; }
+.product-thumb { height: 180px; display: flex; align-items: center; justify-content: center; position: relative; overflow:hidden; }
+.product-thumb img { width:100%; height:100%; object-fit:cover; display:block; }
 .product-badge { position: absolute; top: 12px; left: 12px; background: var(--wine); color: var(--white); font-size: .7rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; padding: 3px 10px; border-radius: 4px; }
 .product-badge.gold { background: var(--gold); color: #3d2600; }
 .product-badge.green { background: var(--green); }
@@ -511,7 +512,7 @@ footer a { color: rgba(255,255,255,.55); }
     <div class="products-grid" id="productsGrid">
 
       <div class="product-card" data-cat="laine">
-        <div class="product-thumb" style="background:#fdf0f4;">🧣<span class="product-badge">Bestseller</span></div>
+        <div class="product-thumb"><img src="/images/echarpe-laine-douce.webp" alt="Écharpe mérinos extra-fine grossiste" width="800" height="600" loading="lazy"><span class="product-badge">Bestseller</span></div>
         <div class="product-body">
           <div class="product-meta"><span class="meta-chip">100% Mérinos</span><span class="meta-chip">180×30cm</span><span class="meta-chip">40 coloris</span></div>
           <div class="product-name">Écharpe Mérinos Extra-Fine</div>
@@ -523,7 +524,7 @@ footer a { color: rgba(255,255,255,.55); }
       </div>
 
       <div class="product-card" data-cat="laine">
-        <div class="product-thumb" style="background:#fce8f0;">🧣<span class="product-badge">Pro</span></div>
+        <div class="product-thumb"><img src="/images/echarpe-chunky-oversize.webp" alt="Écharpe chunky oversize en laine" width="800" height="600" loading="lazy"><span class="product-badge">Pro</span></div>
         <div class="product-body">
           <div class="product-meta"><span class="meta-chip">Laine Chunky</span><span class="meta-chip">200×35cm</span><span class="meta-chip">25 coloris</span></div>
           <div class="product-name">Écharpe Chunky Oversize</div>
@@ -535,7 +536,7 @@ footer a { color: rgba(255,255,255,.55); }
       </div>
 
       <div class="product-card" data-cat="soie">
-        <div class="product-thumb" style="background:#fff8f0;"><span style="font-size:2.8rem">✨</span><span class="product-badge gold">Premium</span></div>
+        <div class="product-thumb"><img src="/images/foulard-soie-femme.webp" alt="Foulard soie femme grossiste" width="800" height="600" loading="lazy"><span class="product-badge gold">Premium</span></div>
         <div class="product-body">
           <div class="product-meta"><span class="meta-chip">100% Soie</span><span class="meta-chip">90×90cm</span><span class="meta-chip">60 motifs</span></div>
           <div class="product-name">Foulard Soie Carré Imprimé</div>
@@ -547,7 +548,7 @@ footer a { color: rgba(255,255,255,.55); }
       </div>
 
       <div class="product-card" data-cat="soie">
-        <div class="product-thumb" style="background:#fdf5ec;"><span style="font-size:2.8rem">✨</span></div>
+        <div class="product-thumb"><img src="/images/etoles-femme-chic.webp" alt="Étole soie modal longue grossiste" width="800" height="600" loading="lazy"></div>
         <div class="product-body">
           <div class="product-meta"><span class="meta-chip">Soie & Modal</span><span class="meta-chip">180×70cm</span><span class="meta-chip">30 coloris</span></div>
           <div class="product-name">Étole Soie-Modal Longue</div>
@@ -559,7 +560,7 @@ footer a { color: rgba(255,255,255,.55); }
       </div>
 
       <div class="product-card" data-cat="cachemire">
-        <div class="product-thumb" style="background:#fdf0f4;"><span style="font-size:2.8rem">👑</span><span class="product-badge gold">Luxe</span></div>
+        <div class="product-thumb"><img src="/images/pashmina-chevre.webp" alt="Châle cachemire pur Mongolie grossiste" width="800" height="600" loading="lazy"><span class="product-badge gold">Luxe</span></div>
         <div class="product-body">
           <div class="product-meta"><span class="meta-chip">100% Cachemire</span><span class="meta-chip">200×70cm</span><span class="meta-chip">25 coloris</span></div>
           <div class="product-name">Châle Cachemire Pur Mongolie</div>
@@ -571,7 +572,7 @@ footer a { color: rgba(255,255,255,.55); }
       </div>
 
       <div class="product-card" data-cat="cachemire">
-        <div class="product-thumb" style="background:#fcf0f6;"><span style="font-size:2.8rem">👑</span></div>
+        <div class="product-thumb"><img src="/images/cachemire-soie-mix.webp" alt="Écharpe cachemire-soie mix grossiste" width="800" height="600" loading="lazy"></div>
         <div class="product-body">
           <div class="product-meta"><span class="meta-chip">70% Cachemire / 30% Soie</span><span class="meta-chip">180×60cm</span><span class="meta-chip">18 coloris</span></div>
           <div class="product-name">Écharpe Cachemire-Soie Mix</div>
@@ -583,7 +584,7 @@ footer a { color: rgba(255,255,255,.55); }
       </div>
 
       <div class="product-card" data-cat="snood">
-        <div class="product-thumb" style="background:#f4f0fb;"><span style="font-size:2.8rem">🔵</span><span class="product-badge">Pro</span></div>
+        <div class="product-thumb"><img src="/images/snood-polaire-chaud.webp" alt="Snood polaire chaud grossiste" width="800" height="600" loading="lazy"><span class="product-badge">Pro</span></div>
         <div class="product-body">
           <div class="product-meta"><span class="meta-chip">Polaire Double Face</span><span class="meta-chip">One size</span><span class="meta-chip">30 coloris</span></div>
           <div class="product-name">Snood Polaire Chaud</div>
@@ -595,7 +596,7 @@ footer a { color: rgba(255,255,255,.55); }
       </div>
 
       <div class="product-card" data-cat="coton">
-        <div class="product-thumb" style="background:#edf7f1;"><span style="font-size:2.8rem">🌿</span><span class="product-badge green">Bio GOTS</span></div>
+        <div class="product-thumb"><img src="/images/foulard-coton-bio.webp" alt="Foulard coton biologique GOTS grossiste" width="800" height="600" loading="lazy"><span class="product-badge green">Bio GOTS</span></div>
         <div class="product-body">
           <div class="product-meta"><span class="meta-chip">100% Coton Bio</span><span class="meta-chip">180×45cm</span><span class="meta-chip">50 coloris</span></div>
           <div class="product-name">Foulard Coton Biologique GOTS</div>
@@ -607,7 +608,7 @@ footer a { color: rgba(255,255,255,.55); }
       </div>
 
       <div class="product-card" data-cat="recycle">
-        <div class="product-thumb" style="background:#eefaf5;"><span style="font-size:2.8rem">♻️</span><span class="product-badge green">GRS</span></div>
+        <div class="product-thumb"><img src="/images/echarpe-recyclee-grs.webp" alt="Écharpe recyclée GRS grossiste" width="800" height="600" loading="lazy"><span class="product-badge green">GRS</span></div>
         <div class="product-body">
           <div class="product-meta"><span class="meta-chip">Fibres Recyclées</span><span class="meta-chip">180×35cm</span><span class="meta-chip">20 coloris</span></div>
           <div class="product-name">Écharpe Recyclée Certifiée GRS</div>
